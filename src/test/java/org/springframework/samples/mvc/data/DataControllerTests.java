@@ -28,6 +28,7 @@ public class DataControllerTests extends AbstractContextControllerTests {
 
 	@Test
 	public void param() throws Exception {
+		System.out.println("@Test annotation is called");
 		this.mockMvc.perform(get("/data/param?foo=bar"))
 				.andExpect(content().string("Obtained 'foo' query parameter value 'bar'"));
 	}
