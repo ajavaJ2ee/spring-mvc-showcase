@@ -23,6 +23,7 @@ public class DataControllerTests extends AbstractContextControllerTests {
 
 	@Before
 	public void setup() throws Exception {
+		System.out.println("@Before annoatation is called");
 		this.mockMvc = webAppContextSetup(this.wac).alwaysExpect(status().isOk()).build();
 	}
 
